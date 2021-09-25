@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato</title>
+    <link rel="stylesheet"  href="css/reset.css">
+    <Link rel="stylesheet"  href="css/style.Css">
+</head>
+
+<body>
+
+    <h1>Ficha de inscrição</h1>
+    <form action="Cadastrar.php"
+    method="POST">
+
+    <p>
+        <label for="timeID"> Nome do time: </label>
+    <input name="time" id="timeID"required>
+    </p>
+
+<P>
+    <label for="responsavel"> Nome do Responsável:</label>
+    <input name= "responsavel" id="responsavel" maxlength="15">
+</P>
+
+<p>
+
+    <label for="email_responsavel">E-mail do responsável</label>
+    <input type="email" id="email_responsavel"
+    name="email_responsavel">
+
+</p>
+
+<p>
+
+    <label> Cidade de origem:</label>
+    <select name="cidade">
+        <option value="sbo">Santa Bárbara </option>
+        <option value="ame">Americana</option>
+        <optionvalue="sum">sumaré</optionvalue>
+    </select>
+</p>
+
+<p>
+    <lanel>Campeonato:</lanel>
+    <input type="radio">Estadual
+    <input type="radio">Regional
+</p>
+
+
+<p>
+    <input type="radio" name="campeonato" value="estadual">Estaddual
+    <input type="radio" name="campeonato" value="regional">Regional
+</p>
+
+<p>
+    <label>Categoria:</label>
+    <input type="checkbox" value="sub20">SUB20
+    <input type="checkbox" value="sub17">SUB17
+
+</p>
+
+<P>
+    <label for="consideracoes">Considerações:</label>
+    <br>
+    <textarea name="considerações" id="consideracoes"></textarea>
+</P>
+
+<p>
+    <label>Escudo:</label>
+    <input type="file">
+
+</p>
+
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+
+
+    </form>
+    
+</body>
+</html>
